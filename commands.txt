@@ -1,0 +1,129 @@
+Terminal Lab
+
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % pwd
+/Users/rifatkhan/Desktop/software_classwork/galaxy-far-far-away
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % ls            
+commands.txt    death_star
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % mkdir tatooine
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % touch luke.txt ben_kenobi.txt
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % ls
+ben_kenobi.txt  commands.txt    death_star      luke.txt        tatooine
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % mv luke.txt tatooine
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % mv ben_kenobi.txt tatooine
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd tatooine
+rifatkhan@Rifats-MacBook-Pro tatooine % ls
+ben_kenobi.txt  luke.txt
+rifatkhan@Rifats-MacBook-Pro tatooine % mkdir millenium_falcon
+rifatkhan@Rifats-MacBook-Pro tatooine % cd millenium_falcon
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % touch han_solo.txt chewbaca.txt
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % ls
+chewbaca.txt    han_solo.txt
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % cd ..
+rifatkhan@Rifats-MacBook-Pro tatooine % mv ben_kenobi.txt obi_wan.txt
+rifatkhan@Rifats-MacBook-Pro tatooine % cd ..
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd death_star
+rifatkhan@Rifats-MacBook-Pro death_star % ls
+darth_vadar.txt         princess_leia.txt       storm_trooper.txt
+rifatkhan@Rifats-MacBook-Pro death_star % cp storm_trooper.txt ../tatooine
+rifatkhan@Rifats-MacBook-Pro death_star % cd ..
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % ls     
+commands.txt    death_star      tatooine
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd tatooine
+rifatkhan@Rifats-MacBook-Pro tatooine % ls
+luke.txt                obi_wan.txt
+millenium_falcon        storm_trooper.txt
+rifatkhan@Rifats-MacBook-Pro tatooine % mv luke.txt millenium_falcon
+rifatkhan@Rifats-MacBook-Pro tatooine % mv obi_wan.txt millenium_falcon
+rifatkhan@Rifats-MacBook-Pro tatooine % mv -R millenium_falcon ../ 
+mv: illegal option -- R
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+rifatkhan@Rifats-MacBook-Pro tatooine % mv millenium_falcon ../
+rifatkhan@Rifats-MacBook-Pro tatooine % cd ..
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % mv millenium_falcon death_star 
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd death_star 
+rifatkhan@Rifats-MacBook-Pro death_star % mv princess_leia.txt millenium_falcon 
+rifatkhan@Rifats-MacBook-Pro death_star % cd ..   
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd tatooine 
+rifatkhan@Rifats-MacBook-Pro tatooine % rm obi_wan.txt
+rm: obi_wan.txt: No such file or directory
+rifatkhan@Rifats-MacBook-Pro tatooine % ls
+storm_trooper.txt
+rifatkhan@Rifats-MacBook-Pro tatooine % cd ..
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd death_star 
+rifatkhan@Rifats-MacBook-Pro death_star % ls
+darth_vadar.txt         millenium_falcon        storm_trooper.txt
+rifatkhan@Rifats-MacBook-Pro death_star % cd ..
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd death_star/millenium_falcon 
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % ls 
+chewbaca.txt            luke.txt                princess_leia.txt
+han_solo.txt            obi_wan.txt
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % rm obi_wan.txt
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % ls
+chewbaca.txt            luke.txt
+han_solo.txt            princess_leia.txt
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % cd ..
+rifatkhan@Rifats-MacBook-Pro death_star % cd ..
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % mkdir yavin_4
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd death_star 
+rifatkhan@Rifats-MacBook-Pro death_star % mv millenium_falcon ../yavin_4 
+rifatkhan@Rifats-MacBook-Pro death_star % cd ../yavin_4 
+rifatkhan@Rifats-MacBook-Pro yavin_4 % mkdir x_wing 
+rifatkhan@Rifats-MacBook-Pro yavin_4 % cd ..     
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % ls
+commands.txt    death_star      tatooine        yavin_4
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd death_star 
+rifatkhan@Rifats-MacBook-Pro death_star % ls
+darth_vadar.txt         storm_trooper.txt
+rifatkhan@Rifats-MacBook-Pro death_star % cd ../tatooine 
+rifatkhan@Rifats-MacBook-Pro tatooine % ls
+storm_trooper.txt
+rifatkhan@Rifats-MacBook-Pro tatooine % cd ../yavin_4 
+rifatkhan@Rifats-MacBook-Pro yavin_4 % ls
+millenium_falcon        x_wing
+rifatkhan@Rifats-MacBook-Pro yavin_4 % cd ..               
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd yavin_4 
+rifatkhan@Rifats-MacBook-Pro yavin_4 % cd millenium_falcon 
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % ls
+chewbaca.txt            luke.txt
+han_solo.txt            princess_leia.txt
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % mv princess_leia.txt ..        
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % mv luke.txt ../x_wing 
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % cd ../yavin4
+cd: no such file or directory: ../yavin4
+rifatkhan@Rifats-MacBook-Pro millenium_falcon % cd ..
+rifatkhan@Rifats-MacBook-Pro yavin_4 % mv millenium_falcon .. && mv x_wing ..
+rifatkhan@Rifats-MacBook-Pro yavin_4 % cd ..
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % ls    
+commands.txt            millenium_falcon        x_wing
+death_star              tatooine                yavin_4
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd death_star 
+rifatkhan@Rifats-MacBook-Pro death_star % mkdir tie_fighter_1 tie_fighter_2 tie_fight
+er_3
+rifatkhan@Rifats-MacBook-Pro death_star % mv darth_vadar.txt tie_fighter_1
+rifatkhan@Rifats-MacBook-Pro death_star % ls
+storm_trooper.txt       tie_fighter_2
+tie_fighter_1           tie_fighter_3
+rifatkhan@Rifats-MacBook-Pro death_star % cp storm_trooper.txt tie_fighter_2 && cp st
+orm_trooper.txt tie_fighter_3
+rifatkhan@Rifats-MacBook-Pro death_star % mv tie_fighter_* ../.         
+rifatkhan@Rifats-MacBook-Pro death_star % cd ..
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % ls
+commands.txt            tatooine                tie_fighter_3
+death_star              tie_fighter_1           x_wing
+millenium_falcon        tie_fighter_2           yavin_4
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % rm -r tie_fighter_2 tie_fighter_3
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % ls
+commands.txt            tatooine                yavin_4
+death_star              tie_fighter_1
+millenium_falcon        x_wing
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % cd x_wing 
+rifatkhan@Rifats-MacBook-Pro x_wing % touch the_force.txt
+rifatkhan@Rifats-MacBook-Pro x_wing % cd ..
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % rm -r death_star 
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % ls
+commands.txt            tatooine                x_wing
+millenium_falcon        tie_fighter_1           yavin_4
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % mv x_wing yavin_4 
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % mv millenium_falcon yavin_4 
+rifatkhan@Rifats-MacBook-Pro galaxy-far-far-away % 
